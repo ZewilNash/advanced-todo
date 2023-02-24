@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:#FAF9F6;
+    flex-direction: column;
+}
+
+.container{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 350px;
+    height: 200px;
+}
+
+.user_details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_details img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.user_details p{
+    color: #90EE90;
+}
+
+.user_details span {
+    font-weight: bold;
+}
+
+.note-form{
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    width: 350px;
+    border-radius: 3px;
+    align-items: center;
+    display: flex;
+    height: 50px;
+}
+
+.note-form input {
+    width: 80%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #90EE90;
+    margin-right: 10px;
+}
+
+.form , .form-edit{
+    display: flex;
+    width: 100%;
+}
+
+.form input , .form-edit input{
+    width: 80%;
+}
+
+.note-form button {
+    outline: none;
+    border: none;
+    background-color: #90EE90;
+    color: #fff;
+    width: 60px;
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.notes{
+   margin-top: 10px;
+   width: auto;
+   overflow-y: scroll;
+   margin-left: 15px;
+}
+
+.notes::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.notes::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+.notes::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+
+.notes .note{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.notes .note p {
+    cursor: pointer;
+}
+
+.notes .note .edit{
+    color: #90EE90;
+    cursor: pointer;
+}
+
+.notes .note .delete{
+    color: salmon;
+    cursor: pointer;
+}
+
+.signout{
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.signout button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.hide{
+    display: none;
+}
